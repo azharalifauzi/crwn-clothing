@@ -1,0 +1,17 @@
+.error-alert {
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-radius: 3px;
+  width: 850px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .cancel-error {
+    font-size: 18px;
+    cursor: pointer;
+  }
+}

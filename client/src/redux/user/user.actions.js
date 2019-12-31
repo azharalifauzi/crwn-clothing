@@ -35,3 +35,27 @@ export const signOutFailure = error => ({
   type: userActionTypes.SIGN_IN_FAILURE,
   payload : error
 });
+
+export const signUpStart = userCredentials => ({
+  type: userActionTypes.SIGN_UP_START,
+  payload: userCredentials
+});
+
+export const signUpSuccess = ({user, additionalData}) => ({
+  type: userActionTypes.SIGN_UP_SUCCESS,
+  payload: { user, additionalData }
+});
+
+export const signUpFailure = error => ({
+  type: userActionTypes.SIGN_IN_FAILURE,
+  payload: error
+});
+
+export const cancelError = () => ({
+  type: userActionTypes.CANCEL_ERROR
+});
+
+export const isPasswordMatch = error => ({
+  type: userActionTypes.IS_PASSWORD_MATCH,
+  payload: error
+});
